@@ -1,0 +1,93 @@
+name: OWN Daily Report
+
+on:
+  # 2026-06-18: native GitHub cron proved unreliable — it silently dropped the
+  # schedule on 06-17/06-18 (the "first cron after a disable->re-enable is not
+  # re-registered" behavior) even though the workflow stayed state:active.
+  # Triggering is therefore driven by an EXTERNAL scheduler: cron-job.org POSTs
+  # to this workflow's dispatch endpoint daily at 08:45 IST — 30 min after the
+  # FoodPharmer report, so this run reads FP's freshly-published history.
+  #
+  # HANDOVER (2026-07-30): the old job (7850492) lives on Dev's personal
+  # cron-job.org account and points at the old repo. The new owner must create
+  # their OWN cron-job.org job against THIS repo — see docs/HANDOVER.md step 4.
+  # Until that job exists this workflow NEVER FIRES: there is no native cron
+  # fallback below, and nothing will warn you. Verify the first morning.
+  #
+  # The native schedule: is DISABLED to avoid double-sends; workflow_dispatch
+  # stays (cron-job.org uses it; also the manual break-glass). To revert to
+  # native cron, uncomment — accepting the reliability caveat above.
+  # schedule:
+  #   - cron: "15 3 * * *"   # 08:45 IST
+  workflow_dispatch:        # manual trigger from GitHub UI / cron-job.org
+    inputs:
+      recipient_override:
+        description: "Comma-separated emails (overrides default list). Blank = normal recipients."
+        required: false
+        default: ""
+      skip_history_commit:
+        description: "Skip committing updated history JSON (use for test runs)"
+        required: false
+        type: boolean
+        default: false
+
+concurrency:
+  group: apify-daily
+  cancel-in-progress: false
+
+jobs:
+  run-report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+
+    env:
+      APIFY_TOKEN:     ${{ secrets.APIFY_TOKEN }}
+      GEMINI_API_KEY:  ${{ secrets.GEMINI_API_KEY }}
+      GROQ_API_KEY:    ${{ secrets.GROQ_API_KEY }}
+      GMAIL_USER:      ${{ secrets.GMAIL_USER }}
+      GMAIL_APP_PASS:  ${{ secrets.GMAIL_APP_PASS }}
+      # Optional. Only set this if the FoodPharmer report repo is renamed, moved,
+      # or made private — otherwise the built-in default in scraper.py is used.
+      # Blank/unset is fine and is the normal state.
+      FP_HISTORY_URL:  ${{ vars.FP_HISTORY_URL }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scraper
+        working-directory: own_scorer
+        env:
+          EMAIL_TO_OVERRIDE: ${{ inputs.recipient_override }}
+        run: python scraper.py
+
+      - name: Commit updated history
+        if: ${{ inputs.skip_history_commit != true }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add own_scorer/history_own.json \
+                  own_scorer/followers_own.json \
+                  own_scorer/snapshots_own.json
+          git add own_scorer/competitors_own.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: update own_scorer history [skip ci]"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0
+            echo "Push attempt $i failed, retrying after backoff..."
+            sleep $((RANDOM % 15 + 5))
+          done
+          echo "Push failed after 5 attempts"
+          exit 1

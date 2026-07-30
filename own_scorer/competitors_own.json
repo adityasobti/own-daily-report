@@ -1,0 +1,64 @@
+{
+  "fetched_at": 1784519947.679888,
+  "fetched_on": "20 Jul 2026",
+  "data": [
+    {
+      "handle": "be.superyou",
+      "followers": 130907,
+      "med_views": null,
+      "med_eng": null,
+      "n_posts": 0,
+      "content": null
+    },
+    {
+      "handle": "thewholetruthfoods",
+      "followers": 389389,
+      "med_views": 41856,
+      "med_eng": null,
+      "n_posts": 8,
+      "content": {
+        "topics": [
+          {
+            "theme": "Food Quality",
+            "share": "60%"
+          },
+          {
+            "theme": "Product Introductions",
+            "share": "20%"
+          },
+          {
+            "theme": "Nutrition Education",
+            "share": "10%"
+          },
+          {
+            "theme": "Brand Philosophy",
+            "share": "5%"
+          },
+          {
+            "theme": "Miscellaneous",
+            "share": "5%"
+          }
+        ],
+        "formats": [
+          "Provocative statements",
+          "Myth-busting",
+          "Product showcases",
+          "Generational comparisons"
+        ],
+        "comments": {
+          "sentiment": "Overwhelmingly negative",
+          "questions": [],
+          "praise": [],
+          "complaints": [
+            "Quality control issues",
+            "Presence of cockroaches in products",
+            "Bad customer experience"
+          ]
+        },
+        "top_performers": "Posts that introduce new products or generations, such as the 'Uncle Shashank Vs The Next Gen' post, tend to perform well, garnering high engagement. These posts often use a comparative or competitive format to capture audience attention.",
+        "n_captions": 8,
+        "n_comments": 130
+      }
+    }
+  ]
+}

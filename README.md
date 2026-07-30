@@ -65,15 +65,21 @@ scrapes his grid directly — one extra Apify profile call per run, no dependenc
 on any other repo. `FP_HISTORY_URL` is an optional override for a published
 history JSON; `off` disables both features. Leave it unset in production.
 
-## Scheduling — read this before you assume it works
+## Scheduling
 
-The workflow has **no native GitHub cron**. GitHub's scheduler silently dropped
-runs in June 2026, so triggering moved to an external scheduler (cron-job.org)
-that POSTs to the `workflow_dispatch` endpoint at 08:45 IST.
+Native GitHub cron, `15 3 * * *` (03:15 UTC = 08:45 IST). Self-contained: no
+external scheduler, no access token, nothing to renew.
 
-That means: **fork or transfer this repo and nothing runs at all** until you
-create your own scheduler job pointing at it. Nothing warns you. See
-HANDOVER.md step 4.
+GitHub's scheduler is best-effort and runs late under load, so the email lands
+between 08:45 and roughly 09:15 IST. Never early.
+
+**A missed run is silent** — nothing errors, because nothing started. Every
+successful run pushes a `chore: update own_scorer history` commit, so a morning
+with no commit means no report. That's the health check. (A crash *does* email a
+red failure report; only a skipped trigger is quiet.)
+
+GitHub auto-disables scheduled workflows in repos with 60 days of no commits.
+The daily history commit keeps this one alive.
 
 ## Standing rules
 

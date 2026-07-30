@@ -1,25 +1,30 @@
 name: OWN Daily Report
 
 on:
-  # 2026-06-18: native GitHub cron proved unreliable — it silently dropped the
-  # schedule on 06-17/06-18 (the "first cron after a disable->re-enable is not
-  # re-registered" behavior) even though the workflow stayed state:active.
-  # Triggering is therefore driven by an EXTERNAL scheduler: cron-job.org POSTs
-  # to this workflow's dispatch endpoint daily at 08:45 IST — 30 min after the
-  # FoodPharmer report, so this run reads FP's freshly-published history.
+  # 2026-07-30: triggering moved BACK to native GitHub cron, so the report is
+  # fully self-contained in this repo — no external scheduler, no personal
+  # access token to expire, no third-party account. Nothing outside GitHub is
+  # needed to keep it running.
   #
-  # HANDOVER (2026-07-30): the old job (7850492) lives on Dev's personal
-  # cron-job.org account and points at the old repo. The new owner must create
-  # their OWN cron-job.org job against THIS repo — see docs/HANDOVER.md step 4.
-  # Until that job exists this workflow NEVER FIRES: there is no native cron
-  # fallback below, and nothing will warn you. Verify the first morning.
+  # History worth knowing: native cron was abandoned in June 2026 after GitHub
+  # silently dropped the schedule on 06-17/06-18 (a workflow that had been
+  # disabled and re-enabled never got re-registered, while still reporting
+  # state:active). Two things make it safe again here: this schedule is being
+  # created fresh rather than re-enabled, and each run commits updated history,
+  # which keeps the repo active — GitHub auto-disables scheduled workflows in
+  # repos with 60 days of no commits.
   #
-  # The native schedule: is DISABLED to avoid double-sends; workflow_dispatch
-  # stays (cron-job.org uses it; also the manual break-glass). To revert to
-  # native cron, uncomment — accepting the reliability caveat above.
-  # schedule:
-  #   - cron: "15 3 * * *"   # 08:45 IST
-  workflow_dispatch:        # manual trigger from GitHub UI / cron-job.org
+  # Known and accepted: GitHub's scheduler is best-effort and can run late
+  # under load, so the email may land anywhere from 08:45 to ~09:15 IST. It is
+  # never early. If exact timing ever matters, an external scheduler hitting
+  # workflow_dispatch is the precise option.
+  #
+  # HEALTH SIGNAL: every successful run pushes a "chore: update own_scorer
+  # history [skip ci]" commit. No new commit for a day = the report did not
+  # run. That is the cheapest way to spot a silent stop.
+  schedule:
+    - cron: "15 3 * * *"    # 03:15 UTC = 08:45 IST
+  workflow_dispatch:        # manual break-glass, and test sends
     inputs:
       recipient_override:
         description: "Comma-separated emails (overrides default list). Blank = normal recipients."

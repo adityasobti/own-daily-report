@@ -1,56 +1,51 @@
 # Setup — OWN Daily Report
 
-Aditya: this is everything you need to take over the OWN daily Instagram report.
-Work it top to bottom. Budget about an hour, plus a week of light watching.
+Aditya: this is the OWN daily Instagram report, now yours.
 
-**Nothing runs on anyone's laptop.** The report runs on GitHub's servers
-(GitHub Actions), woken each morning by an external scheduler. Your machine can
-be off, asleep, or at the bottom of a lake and the report still sends. What you
-are taking over is three cloud accounts — a GitHub repo, a scheduler job, and a
-sending email address — not a program on a computer.
+**Nothing runs on anyone's laptop.** It runs on GitHub's servers, on a schedule
+GitHub keeps itself. Your machine can be off, asleep, or at the bottom of a lake
+and the report still sends. There is no other service, no password to renew, and
+nothing of Dev's left in the path.
 
 The report is one HTML email at **08:45 IST** to 9 people including Revant:
 follower movement, latest post vs. the rolling median, comment sentiment and
 topic mining, community objections and questions, a competitor benchmark, and a
 Reddit mentions sweep. Monday adds a weekly rollup.
 
-Full detail lives in [HANDOVER.md](HANDOVER.md). This file is just your path to
-a working handover.
+Full detail lives in [HANDOVER.md](HANDOVER.md).
 
-## Do this in order, or there will be a gap
+## Status: already done and running
 
-Dev's scheduler is still sending the report every morning. **It stays on until
-yours is proven working.** Do not ask him to switch it off first — that creates
-a day with no report at all.
+Dev completed the setup on 2026-07-30. The repo is yours, the credentials are
+loaded and verified, and the schedule is live on GitHub's own cron. **The report
+sends every morning without anyone doing anything.**
 
-1. You: accept the transfer, add the five secrets (Parts 2–3).
-2. You: set up the scheduler (Part 4).
-3. You: run a test send to yourself (Part 5).
-4. **Only then:** tell Dev to disable his job, the same day yours goes live.
-5. Both jobs live on the same morning = the report sends twice. Both off =
-   it doesn't send at all. Coordinate the swap for one specific day.
+So this document is reference, not a to-do list. Read Parts 4 and 6 — the
+schedule and the failure modes — and keep the rest for when something breaks.
 
-Parts 2–4 take about an hour. If that hour hasn't happened yet, Dev's job keeps
-running and nothing is broken.
+The one thing worth doing soon: tell the recipient list the report now comes
+from your address (Part 7), so it doesn't get filed as spam.
 
 ---
 
-## Part 1 — What you need to have ready
+## Part 1 — What's already done
 
-Your GitHub username (`adityasobti`) is already with Dev and the repo is
-transferred. You still need two things of your own:
+- Repo transferred to `adityasobti/own-daily-report` ✓
+- All five credentials loaded and verified ✓
+- Sending as `sobti.aditya9@gmail.com` (your app password) ✓
+- Schedule live on GitHub cron, 08:45 IST daily ✓
+- Test send verified ✓
 
-1. **The address the report should send FROM,** plus a Google **app password**
-   for it. This becomes the visible "From" on every report, so use a work
-   address, not a personal one.
-   - Enable 2FA on that Google account.
-   - Go to https://myaccount.google.com/apppasswords
-   - Create one named `own-daily-report`. You get a 16-character string.
-   - That string is **not** your account password. Treat it like a password —
-     anyone holding it can send mail as you.
+Two housekeeping items for whenever you get to them:
 
-2. **A cron-job.org account** (free), or another scheduler that can fire one
-   HTTPS POST per day. See Part 4 for why this is not optional.
+1. **Rotate the app password.** The one in use was passed through chat during
+   handover. Revoke it at myaccount.google.com/apppasswords, create a fresh one,
+   and update the `GMAIL_APP_PASS` secret (Part 3 shows where). It only controls
+   sending mail as you, not account access, so this isn't urgent.
+
+2. **Consider a work sending address.** The report currently goes to Revant and
+   leadership from a personal Gmail. A company address is a better long-term
+   home — if you ever move on, the report's identity doesn't move with you.
 
 ---
 
@@ -82,46 +77,30 @@ manager at the same time.
 
 Leave `FP_HISTORY_URL` unset. Unset is the correct production state.
 
-## Part 4 — The scheduler, and why it is the whole ballgame
+## Part 4 — The schedule
 
-**This workflow has no built-in schedule.** GitHub's own cron silently dropped
-runs in June 2026 and was deliberately abandoned. Triggering comes from an
-external scheduler hitting GitHub's API.
+**Nothing to set up. It's already running.**
 
-So: **if you skip this step, nothing runs, ever, and nothing tells you.** There
-is no error, because nothing started. This is the single most common way a
-handover like this dies.
+The workflow schedules itself with GitHub's built-in cron at 03:15 UTC (08:45
+IST), so there is no external service, no access token, and no account of Dev's
+involved. Check Settings → Actions → General → *Allow all actions* is on, and
+that's it.
 
-1. Create a **fine-grained personal access token** at
-   https://github.com/settings/tokens?type=beta
-   - Repository access: only `own-daily-report`
-   - Permissions: **Actions → Read and write**
-   - Set the longest expiry available, and put a calendar reminder two weeks
-     before it expires. When this token dies, the report dies with it.
+Two things to know:
 
-2. Create a cron-job.org account and a job:
-   - **Schedule:** daily, 03:15 UTC (= 08:45 IST)
-   - **Method:** POST
-   - **URL:**
-     ```
-     https://api.github.com/repos/<your-username>/own-daily-report/actions/workflows/own-daily.yml/dispatches
-     ```
-   - **Headers:**
-     ```
-     Authorization: Bearer <your token>
-     Accept: application/vnd.github+json
-     ```
-   - **Body:**
-     ```json
-     {"ref":"main"}
-     ```
-   - A successful call returns **HTTP 204** with an empty body. That's correct,
-     not an error.
+- **The email can be late.** GitHub's scheduler is best-effort and runs behind
+  when the platform is busy, so the report may land anywhere from 08:45 to about
+  09:15 IST. It's never early. If exact timing ever becomes important, an
+  external scheduler hitting the manual-trigger endpoint is the precise option.
 
-3. **Turn on cron-job.org's failure notifications.** This is your only warning
-   system.
+- **How to tell it stopped.** Every successful run pushes a commit called
+  `chore: update own_scorer history [skip ci]`. If the repo has no new commit
+  from a given morning, the report didn't run. That's the cheapest health check —
+  glance at the commit list, not your inbox.
 
-4. Hit "Test run" and confirm a run appears in the repo's Actions tab.
+GitHub disables scheduled workflows in repos that go 60 days without commits.
+This one commits daily, so that won't trigger — but if you ever pause the report
+for a couple of months, re-enable the schedule when you come back.
 
 ## Part 5 — Prove it works before it goes live
 
@@ -150,8 +129,8 @@ until it says READY.
 5. Then watch for a week: a green run every morning, and on the first Monday,
    the weekly rollup section.
 
-Dev keeps his old scheduler disabled but not deleted for that week, so there's a
-rollback path.
+Both of these were run and passed on 2026-07-30 before handover. Re-run them any
+time you change a credential or something looks off.
 
 ## Part 6 — Two keys worth replacing
 
@@ -179,6 +158,11 @@ aarfa.shaikh@gmail.com, bharath@.
 
 ## Things that will bite you
 
+- **A missed morning is silent.** If GitHub's scheduler skips a run there is no
+  error and no email, because nothing started. The tell is the commit list: every
+  successful run pushes a `chore: update own_scorer history` commit, so a morning
+  with no commit is a morning with no report. A crash, by contrast, does email
+  you a red failure report — don't filter those.
 - **Don't restructure the email HTML** unless asked. The Gmail renderer is
   brittle, and Gmail clips anything over 102KB — the bottom of the report just
   vanishes with no error.

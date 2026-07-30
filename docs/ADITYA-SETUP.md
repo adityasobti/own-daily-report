@@ -3,6 +3,12 @@
 Aditya: this is everything you need to take over the OWN daily Instagram report.
 Work it top to bottom. Budget about an hour, plus a week of light watching.
 
+**Nothing runs on anyone's laptop.** The report runs on GitHub's servers
+(GitHub Actions), woken each morning by an external scheduler. Your machine can
+be off, asleep, or at the bottom of a lake and the report still sends. What you
+are taking over is three cloud accounts — a GitHub repo, a scheduler job, and a
+sending email address — not a program on a computer.
+
 The report is one HTML email at **08:45 IST** to 9 people including Revant:
 follower movement, latest post vs. the rolling median, comment sentiment and
 topic mining, community objections and questions, a competitor benchmark, and a
@@ -11,15 +17,30 @@ Reddit mentions sweep. Monday adds a weekly rollup.
 Full detail lives in [HANDOVER.md](HANDOVER.md). This file is just your path to
 a working handover.
 
+## Do this in order, or there will be a gap
+
+Dev's scheduler is still sending the report every morning. **It stays on until
+yours is proven working.** Do not ask him to switch it off first — that creates
+a day with no report at all.
+
+1. You: accept the transfer, add the five secrets (Parts 2–3).
+2. You: set up the scheduler (Part 4).
+3. You: run a test send to yourself (Part 5).
+4. **Only then:** tell Dev to disable his job, the same day yours goes live.
+5. Both jobs live on the same morning = the report sends twice. Both off =
+   it doesn't send at all. Coordinate the swap for one specific day.
+
+Parts 2–4 take about an hour. If that hour hasn't happened yet, Dev's job keeps
+running and nothing is broken.
+
 ---
 
-## Part 1 — Three things to send Dev first
+## Part 1 — What you need to have ready
 
-Nothing can start until Dev has these.
+Your GitHub username (`adityasobti`) is already with Dev and the repo is
+transferred. You still need two things of your own:
 
-1. **Your GitHub username.**
-
-2. **The address the report should send FROM,** plus a Google **app password**
+1. **The address the report should send FROM,** plus a Google **app password**
    for it. This becomes the visible "From" on every report, so use a work
    address, not a personal one.
    - Enable 2FA on that Google account.
@@ -28,19 +49,22 @@ Nothing can start until Dev has these.
    - That string is **not** your account password. Treat it like a password —
      anyone holding it can send mail as you.
 
-3. **Confirm you can create a cron-job.org account** (free), or tell Dev which
-   scheduler you'd rather use. You need something that can fire one HTTPS POST
-   per day. See Part 4 for why this is not optional.
+2. **A cron-job.org account** (free), or another scheduler that can fire one
+   HTTPS POST per day. See Part 4 for why this is not optional.
 
 ---
 
 ## Part 2 — The repo
 
-1. Create a repo on your account called **`own-daily-report`**.
-2. Add Dev as a collaborator with **Admin** access, temporarily.
-3. Dev pushes the code and loads the secrets directly into GitHub, so the API
-   keys never travel through chat or email.
-4. Remove Dev's collaborator access once Part 5 verifies. Don't skip this.
+**Already done and waiting for you.** Dev pushed the code to
+`devnarsinghani22/own-daily-report` and transferred it to you on 2026-07-30.
+
+1. Accept the transfer — check your GitHub notifications, or
+   https://github.com/adityasobti (the invite expires, so do this first).
+2. After accepting, the repo is `adityasobti/own-daily-report` and you own it
+   outright. Full commit history comes with it.
+3. **Repository secrets do NOT survive a transfer.** You add all five yourself
+   in Part 3. This is by design — no key of Dev's ends up on your account.
 
 ## Part 3 — The five secrets
 

@@ -125,6 +125,20 @@ handover like this dies.
 
 ## Part 5 — Prove it works before it goes live
 
+### 5a. Preflight first — one minute, checks everything
+
+Actions → **Preflight Check** → **Run workflow**.
+
+It validates all five secrets and both Instagram scrapes in about a minute, and
+tells you exactly which one is wrong and how to fix it. Green here means the
+real run will work.
+
+Do this before the real run. The real run takes 35–48 minutes, so finding a bad
+key that way costs you most of an hour. Run Preflight as many times as you need
+until it says READY.
+
+### 5b. Then the real thing
+
 1. Actions → *OWN Daily Report* → **Run workflow**, with:
    - `recipient_override` = your email
    - `skip_history_commit` = **true**

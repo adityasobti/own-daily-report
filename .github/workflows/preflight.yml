@@ -1,0 +1,29 @@
+name: Preflight Check
+
+# Validates all five secrets in ~1 minute instead of finding out after a 40-min
+# report run. Run this FIRST, after adding secrets, before scheduling anything.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    env:
+      APIFY_TOKEN:     ${{ secrets.APIFY_TOKEN }}
+      GEMINI_API_KEY:  ${{ secrets.GEMINI_API_KEY }}
+      GROQ_API_KEY:    ${{ secrets.GROQ_API_KEY }}
+      GMAIL_USER:      ${{ secrets.GMAIL_USER }}
+      GMAIL_APP_PASS:  ${{ secrets.GMAIL_APP_PASS }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate every credential
+        run: python preflight.py

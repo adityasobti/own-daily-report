@@ -37,6 +37,14 @@ TEST_MODE=true python scraper.py              # sends only to you
 full distribution list. Use it for every change. A normal run emails 9 people
 including the founder.
 
+## Preflight
+
+Before the first run, or any time something looks wrong:
+Actions → **Preflight Check** → Run workflow.
+
+Validates all five secrets and both Instagram scrapes in ~1 minute and names the
+exact failure. Locally: `python preflight.py`.
+
 ## Required secrets
 
 | Name | Used for |

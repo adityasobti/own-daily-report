@@ -178,8 +178,61 @@ aarfa.shaikh@gmail.com, bharath@.
 - **Test with `TEST_MODE=true`** for any local change. A normal run emails nine
   people including the founder.
 
+## If the report doesn't arrive one morning
+
+You don't need the command line for any of this — it's all buttons on
+github.com.
+
+**First, work out which of the two things happened.** Go to the repo →
+**Actions** tab → *OWN Daily Report* in the left sidebar.
+
+**Case A — there's a run, and it's red.** It started and crashed. Click the run,
+click the failed step, and read the last few lines; the error is usually a
+credential. Run **Preflight Check** (Actions → Preflight Check → Run workflow) —
+it takes a minute and names the broken secret and how to fix it.
+
+**Case B — there's no run at all for that morning.** GitHub's scheduler skipped
+it. Nothing is broken; it just didn't fire. Send it manually:
+
+1. Actions → *OWN Daily Report* → **Run workflow** (button on the right)
+2. Leave both boxes **empty**
+3. Click the green **Run workflow**
+
+That sends the real report to everyone, 35–48 minutes later. Leaving the boxes
+empty is what makes it the real thing — filling in `recipient_override` sends
+only to that address, which is how you test without emailing the team.
+
+If it skips more than once in a fortnight, GitHub's scheduler isn't reliable
+enough for this and you should drive it from an external scheduler instead.
+HANDOVER.md section 3 explains that setup.
+
+**Don't panic about one late morning.** GitHub's cron runs behind when the
+platform is busy. Anything up to about 09:15 IST is normal.
+
 ## Who to ask
 
-Dev wrote this and is reachable for questions during handover week, but he is
-out of the company and off the recipient list — he will not see a bad send. From
-cutover onward, you are the only person watching this.
+Nobody, structurally. Dev has left the company, is off the recipient list, and
+as of 2026-07-30 has no access to this repo. He can answer a question as a
+favour, but he cannot see the report, cannot see a failure, and cannot fix
+anything from his side.
+
+You are the only person watching this. That's the point of the handover — but it
+does mean a silent stop stays silent until you notice. Glancing at the commit
+list once a week is the cheapest habit that catches it.
+
+## Two loose ends Dev flagged
+
+1. **The Groq key is shared.** `GROQ_API_KEY` is the same key Dev uses in two of
+   his personal projects. It works today. But if he ever rotates it there, this
+   report breaks at 08:45 with no warning and no obvious cause. Generating your
+   own at https://console.groq.com/keys and replacing the secret takes two
+   minutes and removes the trap permanently. Worth doing before you forget this
+   sentence exists.
+
+2. **The Gemini key's owner is unknown.** Nothing in the API reveals which
+   Google account holds the project behind it. If it turns out to be Dev's
+   personal account, the same silent-breakage risk applies. Generate your own at
+   https://aistudio.google.com/apikey if you want certainty.
+
+Neither is urgent. Both are the kind of thing that bites eighteen months later
+when nobody remembers why.

@@ -27,22 +27,21 @@ GMAIL_PASS  = os.getenv("GMAIL_APP_PASS", "")
 IG_USERNAME    = "onlywhatsneeded"
 FP_HANDLE      = "foodpharmer"   # collab reels co-posted with FP inflate OWN's numbers
 
-# FoodPharmer post history. Until 2026-07 this report lived in the same repo as
-# the FP report and read the file off disk. Split out, it reads the FP repo's
-# published copy over HTTPS instead. Set FP_HISTORY_URL to override if the FP
-# repo is renamed, moved, or goes private (a private repo needs a token — see
-# docs/HANDOVER.md); set it to "off" to disable the FoodPharmer-effect box and
-# the collab cross-match entirely.
-# NB: unset AND empty both fall through to the default on purpose — GitHub
-# Actions passes an undefined `vars.*` as an empty string, and treating that as
-# "disabled" would silently drop the feature on every scheduled run.
-_FP_HISTORY_URL_DEFAULT = (
-    "https://raw.githubusercontent.com/devnarsinghani22/-foodpharmer-reports"
-    "/main/instagram_scorer/history_ig.json"
-)
-FP_HISTORY_URL = os.getenv("FP_HISTORY_URL", "").strip() or _FP_HISTORY_URL_DEFAULT
+# FoodPharmer post history — powers the FoodPharmer-effect box and the collab
+# cross-match that keeps FP co-authored posts out of OWN's median baseline.
+#
+# History: this used to read ../instagram_scorer/history_ig.json from the shared
+# repo. The FoodPharmer daily report was RETIRED 2026-07-30, so that file is
+# frozen and will never update again. FP still posts, though, and an undetected
+# OWN×FP collab inflates the median and makes solo posts read as underperforming
+# — exactly the bug the cross-match exists to prevent. So the default source is
+# now a direct scrape of @foodpharmer's grid (one Apify profile call per run).
+#
+# FP_HISTORY_URL is an optional override for a published history JSON. Leave it
+# unset unless you have one. "off" disables both features entirely.
+FP_HISTORY_URL = os.getenv("FP_HISTORY_URL", "").strip()
 if FP_HISTORY_URL.lower() in ("off", "none", "disabled", "false"):
-    FP_HISTORY_URL = ""
+    FP_HISTORY_URL = "off"
 COMMENTS_LIMIT = 1000
 HISTORY_LIMIT  = 10
 IG_HISTORY     = "history_own.json"
@@ -75,7 +74,6 @@ _EMAIL_TO_ALL = [
     "samvida.patel@nyu.edu",
     "dristi.patni@onlywhatsneeded.in",
     "pavitra.shetty@onlywhatsneeded.in",
-    "dev.narsinghani@gmail.com",   # handover watch — remove at Phase 7 (docs/HANDOVER.md)
     "aarfa.shaikh@gmail.com",
     "bharath@onlywhatsneeded.in",
 ]
@@ -1547,22 +1545,60 @@ def load_json(path: str, default):
 _FP_HIST_CACHE = None
 
 
+def _scrape_fp_grid() -> list:
+    """Live pull of @foodpharmer's recent grid, shaped like history_ig.json rows.
+
+    One profile 'details' call — latestPosts comes embedded, so this is a single
+    Apify request, not a per-post fetch. The dedicated 'posts' endpoint stays
+    blocked by Instagram (see the note in scrape_instagram), which is why this
+    uses 'details' too.
+    """
+    prof = run_apify_actor(
+        "apify~instagram-scraper",
+        {"directUrls": [f"https://www.instagram.com/{FP_HANDLE}/"],
+         "resultsType": "details", "resultsLimit": 1},
+        "fp-grid",
+    )
+    rows = []
+    for p in ((prof[0] if prof else {}).get("latestPosts") or []):
+        ts = p.get("timestamp") or p.get("taken_at_timestamp")
+        if not ts:
+            continue                      # placeholder item — see scrape_instagram
+        dt = _parse_ts(ts)
+        sc = p.get("shortCode") or p.get("shortcode") or p.get("id", "")
+        rows.append({
+            "id":      sc,
+            "caption": p.get("caption") or "",
+            "date":    dt.strftime("%d %b %Y"),
+            "date_ts": dt.timestamp(),
+            "url":     p.get("url") or (f"https://www.instagram.com/p/{sc}/" if sc else ""),
+        })
+    return rows
+
+
 def load_fp_history() -> list:
-    """@foodpharmer's post history — used twice per run.
+    """@foodpharmer's recent posts — used twice per run.
 
     Powers (a) the "FoodPharmer effect" attribution box and (b) the collab
     cross-match that keeps FP co-authored posts out of OWN's median baseline.
 
     Resolution order:
       1. ../instagram_scorer/history_ig.json  — the old mono-repo file, if present
-      2. FP_HISTORY_URL                       — the FP repo's published raw JSON
+      2. FP_HISTORY_URL                       — a published history JSON, if set
+      3. live scrape of @foodpharmer's grid   — the default since the FP report
+                                                was retired 2026-07-30
 
-    Returns [] if neither resolves; both call sites already degrade gracefully
-    (attribution box omitted, collab flags fall back to the owner-based check in
-    scrape_instagram()). Result is cached so a run costs at most one fetch.
+    Returns [] if everything fails; both call sites degrade gracefully (the
+    attribution box is omitted and collab flags fall back to the owner-based
+    check in scrape_instagram). Cached, so a run costs at most one lookup.
     """
     global _FP_HIST_CACHE
     if _FP_HIST_CACHE is not None:
+        return _FP_HIST_CACHE
+
+    if FP_HISTORY_URL == "off":
+        print("      FP history: disabled via FP_HISTORY_URL=off.")
+        _FP_HIST_CACHE = []
         return _FP_HIST_CACHE
 
     local = os.path.join("..", "instagram_scorer", "history_ig.json")
@@ -1571,20 +1607,25 @@ def load_fp_history() -> list:
         print(f"      FP history: {len(_FP_HIST_CACHE)} posts (local file)")
         return _FP_HIST_CACHE
 
-    if not FP_HISTORY_URL:
-        print("      ⚠ FP history: no local file, FP_HISTORY_URL unset — "
-              "FoodPharmer-effect box and collab cross-match are OFF this run.")
-        _FP_HIST_CACHE = []
-        return _FP_HIST_CACHE
+    if FP_HISTORY_URL:
+        try:
+            resp = requests.get(FP_HISTORY_URL, timeout=30)
+            resp.raise_for_status()
+            data = resp.json()
+            if isinstance(data, list) and data:
+                _FP_HIST_CACHE = data
+                print(f"      FP history: {len(data)} posts (FP_HISTORY_URL)")
+                return _FP_HIST_CACHE
+            print("      ⚠ FP_HISTORY_URL returned no usable rows — scraping instead.")
+        except Exception as e:
+            print(f"      ⚠ FP_HISTORY_URL fetch failed ({type(e).__name__}: {e}) "
+                  "— scraping instead.")
 
     try:
-        resp = requests.get(FP_HISTORY_URL, timeout=30)
-        resp.raise_for_status()
-        data = resp.json()
-        _FP_HIST_CACHE = data if isinstance(data, list) else []
-        print(f"      FP history: {len(_FP_HIST_CACHE)} posts (fetched)")
+        _FP_HIST_CACHE = _scrape_fp_grid()
+        print(f"      FP history: {len(_FP_HIST_CACHE)} posts (live @{FP_HANDLE} scrape)")
     except Exception as e:
-        print(f"      ⚠ FP history fetch failed ({type(e).__name__}: {e}) — "
+        print(f"      ⚠ FP grid scrape failed ({type(e).__name__}: {e}) — "
               "FoodPharmer-effect box and collab cross-match are OFF this run.")
         _FP_HIST_CACHE = []
     return _FP_HIST_CACHE

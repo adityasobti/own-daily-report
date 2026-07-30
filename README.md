@@ -34,7 +34,7 @@ TEST_MODE=true python scraper.py              # sends only to you
 ```
 
 `TEST_MODE=true` sends to `TEST_EMAIL` (defaults to `GMAIL_USER`) instead of the
-full distribution list. Use it for every change. A normal run emails 10 people
+full distribution list. Use it for every change. A normal run emails 9 people
 including the founder.
 
 ## Required secrets
@@ -48,6 +48,14 @@ including the founder.
 | `GMAIL_APP_PASS` | 16-char Google app password (needs 2FA on the account) |
 
 Optional: `FP_HISTORY_URL`, `EMAIL_TO_OVERRIDE`, `TEST_MODE`, `TEST_EMAIL`.
+
+### @foodpharmer data
+
+The FoodPharmer-effect box and the collab cross-match need @foodpharmer's recent
+posts. The FoodPharmer daily report was retired on 2026-07-30, so this report
+scrapes his grid directly — one extra Apify profile call per run, no dependency
+on any other repo. `FP_HISTORY_URL` is an optional override for a published
+history JSON; `off` disables both features. Leave it unset in production.
 
 ## Scheduling — read this before you assume it works
 

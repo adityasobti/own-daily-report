@@ -1,69 +1,114 @@
 {
-  "fetched_at": 1785500362.5579853,
-  "fetched_on": "31 Jul 2026",
+  "fetched_at": 1786092118.3124287,
+  "fetched_on": "07 Aug 2026",
   "data": [
     {
       "handle": "be.superyou",
-      "followers": 134423,
-      "med_views": null,
-      "med_eng": null,
-      "n_posts": 0,
-      "content": null
+      "followers": 137340,
+      "med_views": 62151,
+      "med_eng": 0.31,
+      "n_posts": 3,
+      "content": {
+        "topics": [
+          {
+            "theme": "New Product Launch",
+            "share": "60%"
+          },
+          {
+            "theme": "Protein and Fitness",
+            "share": "20%"
+          },
+          {
+            "theme": "Entertainment and Pop Culture",
+            "share": "10%"
+          },
+          {
+            "theme": "User Engagement and Interaction",
+            "share": "5%"
+          },
+          {
+            "theme": "Brand Awareness",
+            "share": "5%"
+          }
+        ],
+        "formats": [
+          "Short-form announcements with attention-grabbing hooks",
+          "Engagement-driven posts with questions or challenges",
+          "Sponsored content with celebrity endorsements",
+          "Interactive content with giveaways or discounts"
+        ],
+        "comments": {
+          "sentiment": "Generally positive but with some negative feedback",
+          "questions": [
+            "When will the new product be available?",
+            "How can I get a refund or resolve an issue with my order?"
+          ],
+          "praise": [
+            "Love the new product!",
+            "Great job on the marketing campaign!"
+          ],
+          "complaints": [
+            "Poor customer service",
+            "Issues with packaging and product quality"
+          ]
+        },
+        "top_performers": "Posts with engaging hooks, celebrity endorsements, and interactive elements tend to perform well, with the top post being a new product launch announcement with over 29,000 engagements. These posts often generate a high volume of comments, likes, and shares, indicating strong audience interest and engagement.",
+        "n_captions": 3,
+        "n_comments": 87
+      }
     },
     {
       "handle": "thewholetruthfoods",
-      "followers": 393746,
-      "med_views": 96974,
-      "med_eng": 0.57,
+      "followers": 397069,
+      "med_views": 41780,
+      "med_eng": 0.37,
       "n_posts": 7,
       "content": {
         "topics": [
           {
-            "theme": "Food Quality",
-            "share": "50%"
+            "theme": "Product Ingredients",
+            "share": "30%"
           },
           {
-            "theme": "Behind-the-Scenes",
+            "theme": "Company Values",
+            "share": "25%"
+          },
+          {
+            "theme": "Product Quality",
             "share": "20%"
           },
           {
-            "theme": "Product Introductions",
+            "theme": "New Product Launches",
             "share": "15%"
           },
           {
             "theme": "Customer Service",
             "share": "10%"
-          },
-          {
-            "theme": "Food Education",
-            "share": "5%"
           }
         ],
         "formats": [
-          "Conversational Captions",
-          "Personal Stories",
-          "Product Showcase",
-          "Apology Statements"
+          "Short narrative captions",
+          "Behind-the-scenes content",
+          "Apology and response posts",
+          "Introduction of new products"
         ],
         "comments": {
           "sentiment": "Mixed",
           "questions": [
-            "Product authenticity",
-            "Ingredient sourcing",
-            "Quality control"
+            "Inquiries about product ingredients",
+            "Concerns about product quality",
+            "Requests for collaborations"
           ],
           "praise": [
-            "Appreciation for transparency",
-            "Loyalty to the brand",
-            "Positive customer service experiences"
+            "Appreciation for company values",
+            "Positive feedback on customer service"
           ],
           "complaints": [
-            "Quality control issues",
-            "Inconsistent delivery experiences",
-            "Presence of contaminants in products"
+            "Reports of poor product quality",
+            "Issues with order delivery"
           ]
         },
-        "top_performers": "Posts that perform well tend to be conversational, humorous, and showcase the brand's personality, such as the 'Uncle Shashank Vs The Next Gen' post, which received over 10,000 engagements. Apology statements and behind-the-scenes content also resonate with the audience, as seen in the 'We’re sorry' post with over 7,000 engagements.",
+        "top_performers": "Posts that perform well are those that showcase the company's values and personality, such as the 'Uncle Shashank Vs The Next Gen' post, and those that address customer concerns and issues, like the apology post. These types of posts tend to generate high engagement and positive sentiment from the audience.",
         "n_captions": 7,
         "n_comments": 150
       }

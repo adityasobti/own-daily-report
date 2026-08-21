@@ -1,122 +1,22 @@
 {
-  "fetched_at": 1786697507.678997,
-  "fetched_on": "14 Aug 2026",
+  "fetched_at": 1787291350.4516897,
+  "fetched_on": "21 Aug 2026",
   "data": [
     {
-      "handle": "thewholetruthfoods",
-      "followers": 399735,
-      "med_views": 48186,
+      "handle": "be.superyou",
+      "followers": 140282,
+      "med_views": 55536,
       "med_eng": null,
-      "n_posts": 8,
-      "content": {
-        "topics": [
-          {
-            "theme": "Product Introduction",
-            "share": "30%"
-          },
-          {
-            "theme": "Food Education",
-            "share": "25%"
-          },
-          {
-            "theme": "Behind-the-Scenes",
-            "share": "20%"
-          },
-          {
-            "theme": "Customer Engagement",
-            "share": "15%"
-          },
-          {
-            "theme": "Quality and Safety",
-            "share": "10%"
-          }
-        ],
-        "formats": [
-          "Conversational captions",
-          "Myth-busting posts",
-          "Educational content",
-          "Humorous anecdotes"
-        ],
-        "comments": {
-          "sentiment": "Mixed",
-          "questions": [
-            "Product inquiries",
-            "Quality concerns",
-            "Collaboration requests"
-          ],
-          "praise": [
-            "Appreciation for transparency",
-            "Positive experience with products",
-            "Ethical business practices"
-          ],
-          "complaints": [
-            "Quality control issues",
-            "Delivery problems",
-            "Customer service concerns"
-          ]
-        },
-        "top_performers": "Posts that introduce new products or highlight the brand's commitment to transparency and quality tend to perform well, with the top post being a humorous and engaging introduction to their new product line for kids, garnering over 10,000 engagements.",
-        "n_captions": 8,
-        "n_comments": 110
-      }
+      "n_posts": 6,
+      "content": null
     },
     {
-      "handle": "be.superyou",
-      "followers": 139079,
-      "med_views": 41264,
+      "handle": "thewholetruthfoods",
+      "followers": 402783,
+      "med_views": 47734,
       "med_eng": null,
-      "n_posts": 4,
-      "content": {
-        "topics": [
-          {
-            "theme": "Product Features",
-            "share": "30%"
-          },
-          {
-            "theme": "Partnerships",
-            "share": "20%"
-          },
-          {
-            "theme": "Humor",
-            "share": "20%"
-          },
-          {
-            "theme": "Customer Experience",
-            "share": "15%"
-          },
-          {
-            "theme": "Product Benefits",
-            "share": "15%"
-          }
-        ],
-        "formats": [
-          "Short-form videos with humor",
-          "Product showcases with catchy captions",
-          "Influencer partnerships and collaborations",
-          "Playful use of emojis and hashtags"
-        ],
-        "comments": {
-          "sentiment": "Generally positive",
-          "questions": [
-            "About product ingredients",
-            "Regarding customer service",
-            "About payment and delivery issues"
-          ],
-          "praise": [
-            "Liking the humor and creativity",
-            "Appreciating the product features and benefits",
-            "Enjoying the influencer partnerships"
-          ],
-          "complaints": [
-            "About customer service response times",
-            "Regarding product quality and packaging",
-            "About payment and refund issues"
-          ]
-        },
-        "top_performers": "Posts that use humor, feature influencers, and showcase products in a creative way tend to perform well, with the top post featuring a Bangalore boy speaking Hindi gaining 1760 engagements. These posts often have a lighthearted and entertaining tone, which resonates with the audience.",
-        "n_captions": 4,
-        "n_comments": 105
-      }
+      "n_posts": 8,
+      "content": null
     }
   ]
 }

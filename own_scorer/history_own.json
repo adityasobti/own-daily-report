@@ -5,18 +5,18 @@
     "caption": "When we launched Plant Protein: Coffee, we were very clear about one thing: Our ",
     "date": "03 Sep 2026",
     "date_ts": 1788447814.0,
-    "likes": 1080,
-    "comments": 76,
+    "likes": 1147,
+    "comments": 79,
     "views": null,
-    "engagement": 0.56,
+    "engagement": 0.6,
     "sentiment_score": null,
     "va_scores": {
-      "overall": 6,
+      "overall": 7,
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 40.6,
-    "run_at": "2026-09-05 07:39 UTC"
+    "hours_since_post": 64.8,
+    "run_at": "2026-09-06 07:54 UTC"
   },
   {
     "id": "DcxusMjuK_o",
@@ -24,10 +24,10 @@
     "caption": "Protein is probably one of the most misunderstood nutrients in India.\n\n“Protein ",
     "date": "02 Sep 2026",
     "date_ts": 1788335213.0,
-    "likes": 10562,
-    "comments": 144,
-    "views": 367495,
-    "engagement": 5.2,
+    "likes": 10897,
+    "comments": 147,
+    "views": 381988,
+    "engagement": 5.37,
     "sentiment_score": null,
     "va_scores": {
       "hook": 5,
@@ -37,8 +37,8 @@
       "type": "reel"
     },
     "is_fp_collab": true,
-    "hours_since_post": 71.9,
-    "run_at": "2026-09-05 07:39 UTC"
+    "hours_since_post": 96.1,
+    "run_at": "2026-09-06 07:54 UTC"
   },
   {
     "id": "DctXBN_gKG6",
@@ -46,18 +46,18 @@
     "caption": "One failed batch changed our process.\n\nIn May, a Plant Protein batch failed one ",
     "date": "31 Aug 2026",
     "date_ts": 1788188442.0,
-    "likes": 2076,
+    "likes": 2106,
     "comments": 93,
     "views": null,
-    "engagement": 1.05,
+    "engagement": 1.07,
     "sentiment_score": null,
     "va_scores": {
       "overall": 8,
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 112.6,
-    "run_at": "2026-09-05 07:39 UTC"
+    "hours_since_post": 136.9,
+    "run_at": "2026-09-06 07:54 UTC"
   },
   {
     "id": "DcqNs3vk7Ul",
@@ -65,7 +65,7 @@
     "caption": "India doesn’t have a snacking problem.\n\nWe have a “what are we snacking on?” pro",
     "date": "30 Aug 2026",
     "date_ts": 1788082893.0,
-    "likes": 1266,
+    "likes": 1272,
     "comments": 24,
     "views": null,
     "engagement": 0.63,
@@ -75,8 +75,8 @@
       "type": "carousel"
     },
     "is_fp_collab": true,
-    "hours_since_post": 142.0,
-    "run_at": "2026-09-05 07:39 UTC"
+    "hours_since_post": 166.2,
+    "run_at": "2026-09-06 07:54 UTC"
   },
   {
     "id": "DclgMHRAIBQ",
@@ -84,18 +84,18 @@
     "caption": "Are we hiding our amino-acid profile?\n\nOne question we often receive is: “Why is",
     "date": "28 Aug 2026",
     "date_ts": 1787924814.0,
-    "likes": 894,
-    "comments": 91,
+    "likes": 910,
+    "comments": 94,
     "views": null,
-    "engagement": 0.48,
+    "engagement": 0.49,
     "sentiment_score": null,
     "va_scores": {
       "overall": 6,
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 185.9,
-    "run_at": "2026-09-05 07:39 UTC"
+    "hours_since_post": 210.1,
+    "run_at": "2026-09-06 07:54 UTC"
   },
   {
     "id": "Dcd43vCgFX8",
@@ -103,10 +103,10 @@
     "caption": "Chocolate ≠ Cocoa\n\n Chocolate flavour and cocoa powder are not the same thing.\n\n",
     "date": "25 Aug 2026",
     "date_ts": 1787669783.0,
-    "likes": 7099,
-    "comments": 274,
-    "views": 226376,
-    "engagement": 3.58,
+    "likes": 7128,
+    "comments": 278,
+    "views": 226988,
+    "engagement": 3.6,
     "sentiment_score": null,
     "va_scores": {
       "hook": 5,
@@ -116,8 +116,8 @@
       "type": "reel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 256.7,
-    "run_at": "2026-09-05 07:39 UTC"
+    "hours_since_post": 281.0,
+    "run_at": "2026-09-06 07:54 UTC"
   },
   {
     "id": "DcYh6MSAIxS",
@@ -125,7 +125,7 @@
     "caption": "🌱👀",
     "date": "23 Aug 2026",
     "date_ts": 1787489579.0,
-    "likes": 417,
+    "likes": 421,
     "comments": 53,
     "views": null,
     "engagement": 0.23,
@@ -135,8 +135,8 @@
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 306.8,
-    "run_at": "2026-09-05 07:39 UTC"
+    "hours_since_post": 331.0,
+    "run_at": "2026-09-06 07:54 UTC"
   },
   {
     "id": "DcToM9IgGLo",
@@ -144,18 +144,18 @@
     "caption": "What if your dal had 20g more protein?\n\nUnflavoured Whey does not have to become",
     "date": "21 Aug 2026",
     "date_ts": 1787325036.0,
-    "likes": 2551,
+    "likes": 2558,
     "comments": 71,
     "views": null,
-    "engagement": 1.27,
+    "engagement": 1.28,
     "sentiment_score": null,
     "va_scores": {
       "overall": 4,
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 352.5,
-    "run_at": "2026-09-05 07:39 UTC"
+    "hours_since_post": 376.7,
+    "run_at": "2026-09-06 07:54 UTC"
   },
   {
     "id": "DcRC9tzAcnG",
@@ -163,9 +163,9 @@
     "caption": "We spiked chaas.\n\nWith Unflavoured Whey 👀\n\nOne of the biggest questions we hear ",
     "date": "20 Aug 2026",
     "date_ts": 1787238519.0,
-    "likes": 2184,
+    "likes": 2188,
     "comments": 112,
-    "views": 83521,
+    "views": 83750,
     "engagement": 1.12,
     "sentiment_score": null,
     "va_scores": {
@@ -176,8 +176,8 @@
       "type": "reel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 376.5,
-    "run_at": "2026-09-05 07:39 UTC"
+    "hours_since_post": 400.8,
+    "run_at": "2026-09-06 07:54 UTC"
   },
   {
     "id": "DcOdbNCNT6_",
@@ -187,7 +187,7 @@
     "date_ts": 1787151670.0,
     "likes": 279,
     "comments": 15,
-    "views": 30309,
+    "views": 30457,
     "engagement": 0.14,
     "sentiment_score": null,
     "va_scores": {
@@ -198,8 +198,8 @@
       "type": "reel"
     },
     "is_fp_collab": true,
-    "hours_since_post": 400.6,
-    "run_at": "2026-09-05 07:39 UTC"
+    "hours_since_post": 424.9,
+    "run_at": "2026-09-06 07:54 UTC"
   },
   {
     "id": "DcJUNvTgqES",
@@ -207,9 +207,9 @@
     "caption": "Not sure how to use Unflavoured Whey?\n\nHere are three ways to add it to foods yo",
     "date": "17 Aug 2026",
     "date_ts": 1786979071.0,
-    "likes": 2939,
+    "likes": 2943,
     "comments": 125,
-    "views": 117367,
+    "views": 117665,
     "engagement": 1.49,
     "sentiment_score": null,
     "va_scores": {
@@ -220,8 +220,8 @@
       "type": "reel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 448.6,
-    "run_at": "2026-09-05 07:39 UTC"
+    "hours_since_post": 472.8,
+    "run_at": "2026-09-06 07:54 UTC"
   },
   {
     "id": "DcDSHXkgPZs",
@@ -239,8 +239,8 @@
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 504.8,
-    "run_at": "2026-09-05 07:39 UTC"
+    "hours_since_post": 529.1,
+    "run_at": "2026-09-06 07:54 UTC"
   },
   {
     "id": "DcBLbz-uRJN",

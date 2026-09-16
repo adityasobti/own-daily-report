@@ -1,19 +1,19 @@
 {
-  "fetched_at": 1789030111.417678,
-  "fetched_on": "10 Sep 2026",
+  "fetched_at": 1789549975.0509846,
+  "fetched_on": "16 Sep 2026",
   "data": [
     {
       "handle": "be.superyou",
-      "followers": 143588,
-      "med_views": 33408,
-      "med_eng": 0.33,
-      "n_posts": 7,
+      "followers": 144566,
+      "med_views": 35132,
+      "med_eng": null,
+      "n_posts": 6,
       "content": null
     },
     {
       "handle": "thewholetruthfoods",
-      "followers": 412694,
-      "med_views": 29010,
+      "followers": 414945,
+      "med_views": 26065,
       "med_eng": null,
       "n_posts": 8,
       "content": null

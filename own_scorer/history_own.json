@@ -5,18 +5,18 @@
     "caption": "Launching: Plant Protein Cocoa (order link in bio)\n\nAfter months of trials and t",
     "date": "15 Sep 2026",
     "date_ts": 1789485934.0,
-    "likes": 1109,
-    "comments": 124,
+    "likes": 1180,
+    "comments": 151,
     "views": null,
-    "engagement": 0.6,
+    "engagement": 0.64,
     "sentiment_score": null,
     "va_scores": {
-      "overall": 5,
+      "overall": 6,
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 41.2,
-    "run_at": "2026-09-17 08:38 UTC"
+    "hours_since_post": 64.8,
+    "run_at": "2026-09-18 08:14 UTC"
   },
   {
     "id": "DdLzjFnAlow",
@@ -24,10 +24,10 @@
     "caption": "What’s inside our Whey Cocoa?\n\nIt had just 4 ingredients: Whey Concentrate, Coco",
     "date": "12 Sep 2026",
     "date_ts": 1789211030.0,
-    "likes": 2929,
-    "comments": 162,
-    "views": 105465,
-    "engagement": 1.5,
+    "likes": 2972,
+    "comments": 167,
+    "views": 107167,
+    "engagement": 1.52,
     "sentiment_score": null,
     "va_scores": {
       "hook": 4,
@@ -37,8 +37,8 @@
       "type": "reel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 117.6,
-    "run_at": "2026-09-17 08:38 UTC"
+    "hours_since_post": 141.2,
+    "run_at": "2026-09-18 08:14 UTC"
   },
   {
     "id": "DdHH_6OAAAr",
@@ -46,7 +46,7 @@
     "caption": "Unflavoured Whey is easy to use. It is also easy to mix badly.\n\nThe most common ",
     "date": "10 Sep 2026",
     "date_ts": 1789052982.0,
-    "likes": 908,
+    "likes": 923,
     "comments": 54,
     "views": null,
     "engagement": 0.47,
@@ -56,8 +56,8 @@
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 161.5,
-    "run_at": "2026-09-17 08:38 UTC"
+    "hours_since_post": 185.1,
+    "run_at": "2026-09-18 08:14 UTC"
   },
   {
     "id": "DdDg4lsEwTy",
@@ -65,7 +65,7 @@
     "caption": "We made getting your daily protein a little easier.\n\nBasil’s OWN protein subscri",
     "date": "09 Sep 2026",
     "date_ts": 1788931802.0,
-    "likes": 1716,
+    "likes": 1733,
     "comments": 33,
     "views": null,
     "engagement": 0.85,
@@ -75,8 +75,8 @@
       "type": "carousel"
     },
     "is_fp_collab": true,
-    "hours_since_post": 195.1,
-    "run_at": "2026-09-17 08:38 UTC"
+    "hours_since_post": 218.7,
+    "run_at": "2026-09-18 08:14 UTC"
   },
   {
     "id": "DdB7nidMnD-",
@@ -84,10 +84,10 @@
     "caption": "BRUTALLY HONEST 1-year report card of @onlywhatsneeded \n\nIn the last one year, w",
     "date": "08 Sep 2026",
     "date_ts": 1788878843.0,
-    "likes": 19411,
-    "comments": 326,
-    "views": 622637,
-    "engagement": 9.55,
+    "likes": 19642,
+    "comments": 327,
+    "views": 631753,
+    "engagement": 9.66,
     "sentiment_score": null,
     "va_scores": {
       "hook": 8,
@@ -97,8 +97,8 @@
       "type": "reel"
     },
     "is_fp_collab": true,
-    "hours_since_post": 209.9,
-    "run_at": "2026-09-17 08:38 UTC"
+    "hours_since_post": 233.4,
+    "run_at": "2026-09-18 08:14 UTC"
   },
   {
     "id": "Dc8D-Q2AL7n",
@@ -106,7 +106,7 @@
     "caption": "We test to reject, not just to approve.\n\nIf a raw material or finished batch fai",
     "date": "06 Sep 2026",
     "date_ts": 1788681773.0,
-    "likes": 548,
+    "likes": 552,
     "comments": 54,
     "views": null,
     "engagement": 0.29,
@@ -116,8 +116,8 @@
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 264.6,
-    "run_at": "2026-09-17 08:38 UTC"
+    "hours_since_post": 288.2,
+    "run_at": "2026-09-18 08:14 UTC"
   },
   {
     "id": "Dc1Fu1lgAkE",
@@ -125,7 +125,7 @@
     "caption": "When we launched Plant Protein: Coffee, we were very clear about one thing: Our ",
     "date": "03 Sep 2026",
     "date_ts": 1788447814.0,
-    "likes": 1445,
+    "likes": 1448,
     "comments": 105,
     "views": null,
     "engagement": 0.75,
@@ -135,8 +135,8 @@
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 329.6,
-    "run_at": "2026-09-17 08:38 UTC"
+    "hours_since_post": 353.2,
+    "run_at": "2026-09-18 08:14 UTC"
   },
   {
     "id": "DcxusMjuK_o",
@@ -144,10 +144,10 @@
     "caption": "Protein is probably one of the most misunderstood nutrients in India.\n\n“Protein ",
     "date": "02 Sep 2026",
     "date_ts": 1788335213.0,
-    "likes": 12638,
-    "comments": 171,
-    "views": 464624,
-    "engagement": 6.2,
+    "likes": 12679,
+    "comments": 170,
+    "views": 466326,
+    "engagement": 6.22,
     "sentiment_score": null,
     "va_scores": {
       "hook": 5,
@@ -157,8 +157,8 @@
       "type": "reel"
     },
     "is_fp_collab": true,
-    "hours_since_post": 360.9,
-    "run_at": "2026-09-17 08:38 UTC"
+    "hours_since_post": 384.5,
+    "run_at": "2026-09-18 08:14 UTC"
   },
   {
     "id": "DctXBN_gKG6",
@@ -166,7 +166,7 @@
     "caption": "One failed batch changed our process.\n\nIn May, a Plant Protein batch failed one ",
     "date": "31 Aug 2026",
     "date_ts": 1788188442.0,
-    "likes": 2282,
+    "likes": 2283,
     "comments": 95,
     "views": null,
     "engagement": 1.15,
@@ -176,8 +176,8 @@
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 401.6,
-    "run_at": "2026-09-17 08:38 UTC"
+    "hours_since_post": 425.2,
+    "run_at": "2026-09-18 08:14 UTC"
   },
   {
     "id": "DcqNs3vk7Ul",
@@ -185,7 +185,7 @@
     "caption": "India doesn’t have a snacking problem.\n\nWe have a “what are we snacking on?” pro",
     "date": "30 Aug 2026",
     "date_ts": 1788082893.0,
-    "likes": 1332,
+    "likes": 1333,
     "comments": 25,
     "views": null,
     "engagement": 0.66,
@@ -195,8 +195,8 @@
       "type": "carousel"
     },
     "is_fp_collab": true,
-    "hours_since_post": 431.0,
-    "run_at": "2026-09-17 08:38 UTC"
+    "hours_since_post": 454.5,
+    "run_at": "2026-09-18 08:14 UTC"
   },
   {
     "id": "DclgMHRAIBQ",
@@ -204,7 +204,7 @@
     "caption": "Are we hiding our amino-acid profile?\n\nOne question we often receive is: “Why is",
     "date": "28 Aug 2026",
     "date_ts": 1787924814.0,
-    "likes": 988,
+    "likes": 991,
     "comments": 98,
     "views": null,
     "engagement": 0.53,
@@ -214,8 +214,8 @@
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 474.9,
-    "run_at": "2026-09-17 08:38 UTC"
+    "hours_since_post": 498.5,
+    "run_at": "2026-09-18 08:14 UTC"
   },
   {
     "id": "Dcd43vCgFX8",
@@ -223,10 +223,10 @@
     "caption": "Chocolate ≠ Cocoa\n\n Chocolate flavour and cocoa powder are not the same thing.\n\n",
     "date": "25 Aug 2026",
     "date_ts": 1787669783.0,
-    "likes": 7234,
+    "likes": 7238,
     "comments": 280,
-    "views": 230921,
-    "engagement": 3.63,
+    "views": 231030,
+    "engagement": 3.64,
     "sentiment_score": null,
     "va_scores": {
       "hook": 5,
@@ -236,8 +236,8 @@
       "type": "reel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 545.7,
-    "run_at": "2026-09-17 08:38 UTC"
+    "hours_since_post": 569.3,
+    "run_at": "2026-09-18 08:14 UTC"
   },
   {
     "id": "DcYh6MSAIxS",
@@ -883,24 +883,5 @@
     "is_fp_collab": false,
     "hours_since_post": 587.8,
     "run_at": "2026-07-17 03:17 UTC"
-  },
-  {
-    "id": "DZxPKE6jHgM",
-    "url": "https://www.instagram.com/p/DZxPKE6jHgM/",
-    "caption": "Someone made this billboard for Only Whats Needed and I personally really liked ",
-    "date": "19 Jun 2026",
-    "date_ts": 1781876087.0,
-    "likes": 88233,
-    "comments": 437,
-    "views": null,
-    "engagement": 44.9,
-    "sentiment_score": 0.83,
-    "va_scores": {
-      "overall": 6,
-      "type": "carousel"
-    },
-    "is_fp_collab": true,
-    "hours_since_post": 613.7,
-    "run_at": "2026-07-15 03:16 UTC"
   }
 ]

@@ -1,22 +1,41 @@
 [
   {
-    "id": "DdUByhLgLbo",
-    "url": "https://www.instagram.com/p/DdUByhLgLbo/",
-    "caption": "Launching: Plant Protein Cocoa (order link in bio)\n\nAfter months of trials and t",
-    "date": "15 Sep 2026",
-    "date_ts": 1789485934.0,
-    "likes": 1180,
-    "comments": 151,
+    "id": "Ddbe0t2AMQ_",
+    "url": "https://www.instagram.com/p/Ddbe0t2AMQ_/",
+    "caption": "Plant Protein is available on the Only What’s Needed app.\n\n“Your Plant Protein i",
+    "date": "18 Sep 2026",
+    "date_ts": 1789736038.0,
+    "likes": 810,
+    "comments": 62,
     "views": null,
-    "engagement": 0.64,
+    "engagement": 0.42,
     "sentiment_score": null,
     "va_scores": {
       "overall": 6,
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 64.8,
-    "run_at": "2026-09-18 08:14 UTC"
+    "hours_since_post": 19.1,
+    "run_at": "2026-09-19 08:02 UTC"
+  },
+  {
+    "id": "DdUByhLgLbo",
+    "url": "https://www.instagram.com/p/DdUByhLgLbo/",
+    "caption": "Launching: Plant Protein Cocoa (order link in bio)\n\nAfter months of trials and t",
+    "date": "15 Sep 2026",
+    "date_ts": 1789485934.0,
+    "likes": 1210,
+    "comments": 156,
+    "views": null,
+    "engagement": 0.66,
+    "sentiment_score": null,
+    "va_scores": {
+      "overall": 6,
+      "type": "carousel"
+    },
+    "is_fp_collab": false,
+    "hours_since_post": 88.6,
+    "run_at": "2026-09-19 08:02 UTC"
   },
   {
     "id": "DdLzjFnAlow",
@@ -24,10 +43,10 @@
     "caption": "What’s inside our Whey Cocoa?\n\nIt had just 4 ingredients: Whey Concentrate, Coco",
     "date": "12 Sep 2026",
     "date_ts": 1789211030.0,
-    "likes": 2972,
-    "comments": 167,
-    "views": 107167,
-    "engagement": 1.52,
+    "likes": 3007,
+    "comments": 170,
+    "views": 108423,
+    "engagement": 1.54,
     "sentiment_score": null,
     "va_scores": {
       "hook": 4,
@@ -37,8 +56,8 @@
       "type": "reel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 141.2,
-    "run_at": "2026-09-18 08:14 UTC"
+    "hours_since_post": 165.0,
+    "run_at": "2026-09-19 08:02 UTC"
   },
   {
     "id": "DdHH_6OAAAr",
@@ -46,18 +65,18 @@
     "caption": "Unflavoured Whey is easy to use. It is also easy to mix badly.\n\nThe most common ",
     "date": "10 Sep 2026",
     "date_ts": 1789052982.0,
-    "likes": 923,
-    "comments": 54,
+    "likes": 939,
+    "comments": 56,
     "views": null,
-    "engagement": 0.47,
+    "engagement": 0.48,
     "sentiment_score": null,
     "va_scores": {
       "overall": 4,
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 185.1,
-    "run_at": "2026-09-18 08:14 UTC"
+    "hours_since_post": 208.9,
+    "run_at": "2026-09-19 08:02 UTC"
   },
   {
     "id": "DdDg4lsEwTy",
@@ -65,18 +84,18 @@
     "caption": "We made getting your daily protein a little easier.\n\nBasil’s OWN protein subscri",
     "date": "09 Sep 2026",
     "date_ts": 1788931802.0,
-    "likes": 1733,
+    "likes": 1749,
     "comments": 33,
     "views": null,
-    "engagement": 0.85,
+    "engagement": 0.86,
     "sentiment_score": null,
     "va_scores": {
       "overall": 4,
       "type": "carousel"
     },
     "is_fp_collab": true,
-    "hours_since_post": 218.7,
-    "run_at": "2026-09-18 08:14 UTC"
+    "hours_since_post": 242.5,
+    "run_at": "2026-09-19 08:02 UTC"
   },
   {
     "id": "DdB7nidMnD-",
@@ -84,10 +103,10 @@
     "caption": "BRUTALLY HONEST 1-year report card of @onlywhatsneeded \n\nIn the last one year, w",
     "date": "08 Sep 2026",
     "date_ts": 1788878843.0,
-    "likes": 19642,
-    "comments": 327,
-    "views": 631753,
-    "engagement": 9.66,
+    "likes": 19961,
+    "comments": 328,
+    "views": 642466,
+    "engagement": 9.81,
     "sentiment_score": null,
     "va_scores": {
       "hook": 8,
@@ -97,8 +116,8 @@
       "type": "reel"
     },
     "is_fp_collab": true,
-    "hours_since_post": 233.4,
-    "run_at": "2026-09-18 08:14 UTC"
+    "hours_since_post": 257.2,
+    "run_at": "2026-09-19 08:02 UTC"
   },
   {
     "id": "Dc8D-Q2AL7n",
@@ -106,7 +125,7 @@
     "caption": "We test to reject, not just to approve.\n\nIf a raw material or finished batch fai",
     "date": "06 Sep 2026",
     "date_ts": 1788681773.0,
-    "likes": 552,
+    "likes": 554,
     "comments": 54,
     "views": null,
     "engagement": 0.29,
@@ -116,8 +135,8 @@
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 288.2,
-    "run_at": "2026-09-18 08:14 UTC"
+    "hours_since_post": 312.0,
+    "run_at": "2026-09-19 08:02 UTC"
   },
   {
     "id": "Dc1Fu1lgAkE",
@@ -135,8 +154,8 @@
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 353.2,
-    "run_at": "2026-09-18 08:14 UTC"
+    "hours_since_post": 377.0,
+    "run_at": "2026-09-19 08:02 UTC"
   },
   {
     "id": "DcxusMjuK_o",
@@ -144,10 +163,10 @@
     "caption": "Protein is probably one of the most misunderstood nutrients in India.\n\n“Protein ",
     "date": "02 Sep 2026",
     "date_ts": 1788335213.0,
-    "likes": 12679,
-    "comments": 170,
-    "views": 466326,
-    "engagement": 6.22,
+    "likes": 12739,
+    "comments": 171,
+    "views": 468823,
+    "engagement": 6.24,
     "sentiment_score": null,
     "va_scores": {
       "hook": 5,
@@ -157,8 +176,8 @@
       "type": "reel"
     },
     "is_fp_collab": true,
-    "hours_since_post": 384.5,
-    "run_at": "2026-09-18 08:14 UTC"
+    "hours_since_post": 408.3,
+    "run_at": "2026-09-19 08:02 UTC"
   },
   {
     "id": "DctXBN_gKG6",
@@ -176,8 +195,8 @@
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 425.2,
-    "run_at": "2026-09-18 08:14 UTC"
+    "hours_since_post": 449.0,
+    "run_at": "2026-09-19 08:02 UTC"
   },
   {
     "id": "DcqNs3vk7Ul",
@@ -195,8 +214,8 @@
       "type": "carousel"
     },
     "is_fp_collab": true,
-    "hours_since_post": 454.5,
-    "run_at": "2026-09-18 08:14 UTC"
+    "hours_since_post": 478.3,
+    "run_at": "2026-09-19 08:02 UTC"
   },
   {
     "id": "DclgMHRAIBQ",
@@ -204,7 +223,7 @@
     "caption": "Are we hiding our amino-acid profile?\n\nOne question we often receive is: “Why is",
     "date": "28 Aug 2026",
     "date_ts": 1787924814.0,
-    "likes": 991,
+    "likes": 992,
     "comments": 98,
     "views": null,
     "engagement": 0.53,
@@ -214,8 +233,8 @@
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 498.5,
-    "run_at": "2026-09-18 08:14 UTC"
+    "hours_since_post": 522.3,
+    "run_at": "2026-09-19 08:02 UTC"
   },
   {
     "id": "Dcd43vCgFX8",

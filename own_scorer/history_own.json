@@ -5,18 +5,18 @@
     "caption": "Plant Protein Cocoa is out now on the ONLY WHAT’S NEEDED app.\n\nIf you’re new to ",
     "date": "30 Sep 2026",
     "date_ts": 1790784257.0,
-    "likes": 374,
-    "comments": 21,
+    "likes": 446,
+    "comments": 37,
     "views": null,
-    "engagement": 0.19,
+    "engagement": 0.23,
     "sentiment_score": null,
     "va_scores": {
-      "overall": 4,
+      "overall": 3,
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 18.0,
-    "run_at": "2026-10-01 10:05 UTC"
+    "hours_since_post": 41.7,
+    "run_at": "2026-10-02 09:43 UTC"
   },
   {
     "id": "DdyIIk8gLrp",
@@ -24,18 +24,18 @@
     "caption": "Why can’t we stop sending a scoop with every pack?\n\nOne of the requests we’ve he",
     "date": "27 Sep 2026",
     "date_ts": 1790495894.0,
-    "likes": 16740,
-    "comments": 1618,
+    "likes": 17300,
+    "comments": 1663,
     "views": null,
-    "engagement": 8.83,
+    "engagement": 9.12,
     "sentiment_score": null,
     "va_scores": {
       "overall": 8,
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 98.1,
-    "run_at": "2026-10-01 10:05 UTC"
+    "hours_since_post": 121.8,
+    "run_at": "2026-10-02 09:43 UTC"
   },
   {
     "id": "DdteI66gBC5",
@@ -43,8 +43,8 @@
     "caption": "Think plant protein isn’t for you?\n\nPlant protein naturally tastes and feels dif",
     "date": "25 Sep 2026",
     "date_ts": 1790339659.0,
-    "likes": 759,
-    "comments": 62,
+    "likes": 767,
+    "comments": 65,
     "views": null,
     "engagement": 0.4,
     "sentiment_score": null,
@@ -53,8 +53,8 @@
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 141.5,
-    "run_at": "2026-10-01 10:05 UTC"
+    "hours_since_post": 165.2,
+    "run_at": "2026-10-02 09:43 UTC"
   },
   {
     "id": "Ddob2R6gLwF",
@@ -62,18 +62,18 @@
     "caption": "Want to join @foodpharmer for a morning run? 👀\n\nThe link to register is on our s",
     "date": "23 Sep 2026",
     "date_ts": 1790170685.0,
-    "likes": 698,
-    "comments": 32,
+    "likes": 705,
+    "comments": 33,
     "views": null,
-    "engagement": 0.35,
+    "engagement": 0.36,
     "sentiment_score": null,
     "va_scores": {
       "overall": 3,
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 188.5,
-    "run_at": "2026-10-01 10:05 UTC"
+    "hours_since_post": 212.1,
+    "run_at": "2026-10-02 09:43 UTC"
   },
   {
     "id": "Ddl0JEJMxQX",
@@ -81,10 +81,10 @@
     "caption": "Sudha Murty Ma’am reads OWN protein label in Kannada!\n\nMost Indians don’t read E",
     "date": "22 Sep 2026",
     "date_ts": 1790082919.0,
-    "likes": 34006,
-    "comments": 397,
-    "views": 937351,
-    "engagement": 16.56,
+    "likes": 34240,
+    "comments": 399,
+    "views": 945244,
+    "engagement": 16.67,
     "sentiment_score": null,
     "va_scores": {
       "hook": 8,
@@ -94,8 +94,8 @@
       "type": "reel"
     },
     "is_fp_collab": true,
-    "hours_since_post": 212.8,
-    "run_at": "2026-10-01 10:05 UTC"
+    "hours_since_post": 236.5,
+    "run_at": "2026-10-02 09:43 UTC"
   },
   {
     "id": "DdgPpY2AEyJ",
@@ -103,8 +103,8 @@
     "caption": "Plant Protein Cocoa is available on the Only What’s Needed app. Order through th",
     "date": "20 Sep 2026",
     "date_ts": 1789895853.0,
-    "likes": 1070,
-    "comments": 110,
+    "likes": 1082,
+    "comments": 112,
     "views": null,
     "engagement": 0.57,
     "sentiment_score": null,
@@ -113,8 +113,8 @@
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 264.8,
-    "run_at": "2026-10-01 10:05 UTC"
+    "hours_since_post": 288.4,
+    "run_at": "2026-10-02 09:43 UTC"
   },
   {
     "id": "DddysJiumrR",
@@ -122,10 +122,10 @@
     "caption": "Walk 8000 steps on the Only What’s Needed app and get a FREE protein coffee!\n\nVa",
     "date": "19 Sep 2026",
     "date_ts": 1789813675.0,
-    "likes": 26318,
-    "comments": 408,
-    "views": 930035,
-    "engagement": 12.86,
+    "likes": 26549,
+    "comments": 409,
+    "views": 938044,
+    "engagement": 12.97,
     "sentiment_score": null,
     "va_scores": {
       "hook": 7,
@@ -135,8 +135,8 @@
       "type": "reel"
     },
     "is_fp_collab": true,
-    "hours_since_post": 287.6,
-    "run_at": "2026-10-01 10:05 UTC"
+    "hours_since_post": 311.3,
+    "run_at": "2026-10-02 09:43 UTC"
   },
   {
     "id": "Ddbe0t2AMQ_",
@@ -144,18 +144,18 @@
     "caption": "Plant Protein Cocoa is available on the Only What’s Needed app. Order through th",
     "date": "18 Sep 2026",
     "date_ts": 1789736038.0,
-    "likes": 1275,
+    "likes": 1287,
     "comments": 83,
     "views": null,
-    "engagement": 0.65,
+    "engagement": 0.66,
     "sentiment_score": null,
     "va_scores": {
       "overall": 6,
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 309.2,
-    "run_at": "2026-10-01 10:05 UTC"
+    "hours_since_post": 332.8,
+    "run_at": "2026-10-02 09:43 UTC"
   },
   {
     "id": "DdUByhLgLbo",
@@ -173,8 +173,8 @@
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 378.7,
-    "run_at": "2026-10-01 10:05 UTC"
+    "hours_since_post": 402.3,
+    "run_at": "2026-10-02 09:43 UTC"
   },
   {
     "id": "DdLzjFnAlow",
@@ -182,9 +182,9 @@
     "caption": "What’s inside our Whey Cocoa?\n\nFour ingredients:\n• Whey protein concentrate\n• Su",
     "date": "12 Sep 2026",
     "date_ts": 1789211030.0,
-    "likes": 3259,
+    "likes": 3264,
     "comments": 189,
-    "views": 118330,
+    "views": 118683,
     "engagement": 1.66,
     "sentiment_score": null,
     "va_scores": {
@@ -195,8 +195,8 @@
       "type": "reel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 455.0,
-    "run_at": "2026-10-01 10:05 UTC"
+    "hours_since_post": 478.7,
+    "run_at": "2026-10-02 09:43 UTC"
   },
   {
     "id": "DdHH_6OAAAr",
@@ -214,8 +214,8 @@
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 498.9,
-    "run_at": "2026-10-01 10:05 UTC"
+    "hours_since_post": 522.6,
+    "run_at": "2026-10-02 09:43 UTC"
   },
   {
     "id": "DdDg4lsEwTy",
@@ -223,7 +223,7 @@
     "caption": "We made getting your daily protein a little easier.\n\nBasil’s OWN protein subscri",
     "date": "09 Sep 2026",
     "date_ts": 1788931802.0,
-    "likes": 1832,
+    "likes": 1835,
     "comments": 34,
     "views": null,
     "engagement": 0.9,
@@ -233,8 +233,8 @@
       "type": "carousel"
     },
     "is_fp_collab": true,
-    "hours_since_post": 532.6,
-    "run_at": "2026-10-01 10:05 UTC"
+    "hours_since_post": 556.2,
+    "run_at": "2026-10-02 09:43 UTC"
   },
   {
     "id": "DdB7nidMnD-",
@@ -907,28 +907,6 @@
     },
     "is_fp_collab": true,
     "hours_since_post": 349.3,
-    "run_at": "2026-07-22 03:17 UTC"
-  },
-  {
-    "id": "DaVeVyBuXNq",
-    "url": "https://www.instagram.com/p/DaVeVyBuXNq/",
-    "caption": "“Don’t take protein powder, it will damage your kidneys.”\n\nThis is one of the mo",
-    "date": "03 Jul 2026",
-    "date_ts": 1783092014.0,
-    "likes": 2685,
-    "comments": 133,
-    "views": 76827,
-    "engagement": 1.42,
-    "sentiment_score": 0.73,
-    "va_scores": {
-      "hook": 4,
-      "emotion": 3,
-      "shareability": 2,
-      "overall": 3,
-      "type": "reel"
-    },
-    "is_fp_collab": false,
-    "hours_since_post": 443.9,
     "run_at": "2026-07-22 03:17 UTC"
   }
 ]

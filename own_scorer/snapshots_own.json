@@ -1,14 +1,6 @@
 {
   "DafoEbPMq0f": [
     {
-      "hours": 13.3,
-      "views": 382752,
-      "likes": 10248,
-      "comments": 153,
-      "shares": null,
-      "ts": 1783480634
-    },
-    {
       "hours": 37.3,
       "views": 490745,
       "likes": 13304,
@@ -733,6 +725,14 @@
       "comments": 5,
       "shares": null,
       "ts": 1791195780
+    },
+    {
+      "hours": 45.0,
+      "views": null,
+      "likes": 694,
+      "comments": 9,
+      "shares": null,
+      "ts": 1791281670
     }
   ]
 }

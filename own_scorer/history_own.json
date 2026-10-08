@@ -5,21 +5,21 @@
     "caption": "Your protein might be spiked by amino acids.\n\nWhen you plan your meals around th",
     "date": "06 Oct 2026",
     "date_ts": 1791290372.0,
-    "likes": 621,
-    "comments": 21,
-    "views": 14788,
-    "engagement": 0.31,
+    "likes": 690,
+    "comments": 24,
+    "views": 18402,
+    "engagement": 0.34,
     "sentiment_score": null,
     "va_scores": {
-      "hook": 3,
+      "hook": 4,
       "emotion": 4,
-      "shareability": 5,
+      "shareability": 3,
       "overall": 4,
       "type": "reel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 21.6,
-    "run_at": "2026-10-07 10:13 UTC"
+    "hours_since_post": 45.9,
+    "run_at": "2026-10-08 10:32 UTC"
   },
   {
     "id": "DeEt3qzk4QI",
@@ -27,18 +27,18 @@
     "caption": "Most people know they need more protein. The harder part is getting enough of it",
     "date": "04 Oct 2026",
     "date_ts": 1791119658.0,
-    "likes": 770,
-    "comments": 9,
+    "likes": 805,
+    "comments": 10,
     "views": null,
-    "engagement": 0.37,
+    "engagement": 0.39,
     "sentiment_score": null,
     "va_scores": {
       "overall": 4,
       "type": "carousel"
     },
     "is_fp_collab": true,
-    "hours_since_post": 69.0,
-    "run_at": "2026-10-07 10:13 UTC"
+    "hours_since_post": 93.3,
+    "run_at": "2026-10-08 10:32 UTC"
   },
   {
     "id": "Dd_d8BYNfyS",
@@ -46,10 +46,10 @@
     "caption": "Do women need protein powder?\n\nFor years, protein powder has been associated wit",
     "date": "02 Oct 2026",
     "date_ts": 1790943617.0,
-    "likes": 1570,
+    "likes": 1632,
     "comments": 45,
-    "views": 59256,
-    "engagement": 0.78,
+    "views": 62043,
+    "engagement": 0.81,
     "sentiment_score": null,
     "va_scores": {
       "hook": 2,
@@ -59,8 +59,8 @@
       "type": "reel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 117.9,
-    "run_at": "2026-10-07 10:13 UTC"
+    "hours_since_post": 142.2,
+    "run_at": "2026-10-08 10:32 UTC"
   },
   {
     "id": "Dd6uJMggNDB",
@@ -68,7 +68,7 @@
     "caption": "Plant Protein Cocoa is out now on the ONLY WHAT’S NEEDED app.\n\nIf you’re new to ",
     "date": "30 Sep 2026",
     "date_ts": 1790784257.0,
-    "likes": 554,
+    "likes": 563,
     "comments": 45,
     "views": null,
     "engagement": 0.29,
@@ -78,8 +78,8 @@
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 162.2,
-    "run_at": "2026-10-07 10:13 UTC"
+    "hours_since_post": 186.5,
+    "run_at": "2026-10-08 10:32 UTC"
   },
   {
     "id": "DdyIIk8gLrp",
@@ -87,18 +87,18 @@
     "caption": "Why can’t we stop sending a scoop with every pack?\n\nOne of the requests we’ve he",
     "date": "27 Sep 2026",
     "date_ts": 1790495894.0,
-    "likes": 19056,
-    "comments": 1855,
+    "likes": 19469,
+    "comments": 1902,
     "views": null,
-    "engagement": 10.05,
+    "engagement": 10.27,
     "sentiment_score": null,
     "va_scores": {
       "overall": 8,
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 242.3,
-    "run_at": "2026-10-07 10:13 UTC"
+    "hours_since_post": 266.6,
+    "run_at": "2026-10-08 10:32 UTC"
   },
   {
     "id": "DdteI66gBC5",
@@ -106,7 +106,7 @@
     "caption": "Think plant protein isn’t for you?\n\nPlant protein naturally tastes and feels dif",
     "date": "25 Sep 2026",
     "date_ts": 1790339659.0,
-    "likes": 802,
+    "likes": 806,
     "comments": 63,
     "views": null,
     "engagement": 0.42,
@@ -116,8 +116,8 @@
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 285.7,
-    "run_at": "2026-10-07 10:13 UTC"
+    "hours_since_post": 310.0,
+    "run_at": "2026-10-08 10:32 UTC"
   },
   {
     "id": "Ddob2R6gLwF",
@@ -135,8 +135,8 @@
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 332.6,
-    "run_at": "2026-10-07 10:13 UTC"
+    "hours_since_post": 356.9,
+    "run_at": "2026-10-08 10:32 UTC"
   },
   {
     "id": "Ddl0JEJMxQX",
@@ -144,10 +144,10 @@
     "caption": "Sudha Murty Ma’am reads OWN protein label in Kannada!\n\nMost Indians don’t read E",
     "date": "22 Sep 2026",
     "date_ts": 1790082919.0,
-    "likes": 35502,
-    "comments": 408,
-    "views": 985351,
-    "engagement": 17.27,
+    "likes": 35664,
+    "comments": 410,
+    "views": 988845,
+    "engagement": 17.34,
     "sentiment_score": null,
     "va_scores": {
       "hook": 8,
@@ -157,8 +157,8 @@
       "type": "reel"
     },
     "is_fp_collab": true,
-    "hours_since_post": 357.0,
-    "run_at": "2026-10-07 10:13 UTC"
+    "hours_since_post": 381.3,
+    "run_at": "2026-10-08 10:32 UTC"
   },
   {
     "id": "DdgPpY2AEyJ",
@@ -166,7 +166,7 @@
     "caption": "Plant Protein Cocoa is available on the Only What’s Needed app. Order through th",
     "date": "20 Sep 2026",
     "date_ts": 1789895853.0,
-    "likes": 1119,
+    "likes": 1122,
     "comments": 113,
     "views": null,
     "engagement": 0.59,
@@ -176,8 +176,8 @@
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 408.9,
-    "run_at": "2026-10-07 10:13 UTC"
+    "hours_since_post": 433.2,
+    "run_at": "2026-10-08 10:32 UTC"
   },
   {
     "id": "DddysJiumrR",
@@ -185,10 +185,10 @@
     "caption": "Walk 8000 steps on the Only What’s Needed app and get a FREE protein coffee!\n\nVa",
     "date": "19 Sep 2026",
     "date_ts": 1789813675.0,
-    "likes": 27033,
-    "comments": 411,
-    "views": 953143,
-    "engagement": 13.2,
+    "likes": 27169,
+    "comments": 413,
+    "views": 956209,
+    "engagement": 13.26,
     "sentiment_score": null,
     "va_scores": {
       "hook": 7,
@@ -198,8 +198,8 @@
       "type": "reel"
     },
     "is_fp_collab": true,
-    "hours_since_post": 431.8,
-    "run_at": "2026-10-07 10:13 UTC"
+    "hours_since_post": 456.1,
+    "run_at": "2026-10-08 10:32 UTC"
   },
   {
     "id": "Ddbe0t2AMQ_",
@@ -207,7 +207,7 @@
     "caption": "Plant Protein Cocoa is available on the Only What’s Needed app. Order through th",
     "date": "18 Sep 2026",
     "date_ts": 1789736038.0,
-    "likes": 1305,
+    "likes": 1306,
     "comments": 83,
     "views": null,
     "engagement": 0.67,
@@ -217,8 +217,8 @@
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 453.3,
-    "run_at": "2026-10-07 10:13 UTC"
+    "hours_since_post": 477.6,
+    "run_at": "2026-10-08 10:32 UTC"
   },
   {
     "id": "DdUByhLgLbo",
@@ -236,8 +236,8 @@
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 522.8,
-    "run_at": "2026-10-07 10:13 UTC"
+    "hours_since_post": 547.1,
+    "run_at": "2026-10-08 10:32 UTC"
   },
   {
     "id": "DdLzjFnAlow",
@@ -930,24 +930,5 @@
     "is_fp_collab": false,
     "hours_since_post": 578.8,
     "run_at": "2026-08-04 11:39 UTC"
-  },
-  {
-    "id": "Dak7SNxAO3u",
-    "url": "https://www.instagram.com/p/Dak7SNxAO3u/",
-    "caption": "Does whey protein damage kidneys?\n\nThis question comes up a lot, especially in I",
-    "date": "09 Jul 2026",
-    "date_ts": 1783610498.0,
-    "likes": 1890,
-    "comments": 48,
-    "views": null,
-    "engagement": 0.97,
-    "sentiment_score": 0.69,
-    "va_scores": {
-      "overall": 4,
-      "type": "carousel"
-    },
-    "is_fp_collab": false,
-    "hours_since_post": 598.2,
-    "run_at": "2026-08-03 13:34 UTC"
   }
 ]

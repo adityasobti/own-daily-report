@@ -5,21 +5,21 @@
     "caption": "we’ve admired @foodpharmer and @onlywhatsneeded ever since their beginning! so w",
     "date": "18 Oct 2026",
     "date_ts": 1792308602.0,
-    "likes": 695,
+    "likes": 748,
     "comments": 51,
-    "views": 30274,
-    "engagement": 0.36,
+    "views": 32843,
+    "engagement": 0.38,
     "sentiment_score": null,
     "va_scores": {
-      "hook": 5,
+      "hook": 3,
       "emotion": 2,
-      "shareability": 3,
+      "shareability": 2,
       "overall": 3,
       "type": "reel"
     },
     "is_fp_collab": true,
-    "hours_since_post": 25.3,
-    "run_at": "2026-10-19 08:49 UTC"
+    "hours_since_post": 49.0,
+    "run_at": "2026-10-20 08:29 UTC"
   },
   {
     "id": "DejpL9juJr_",
@@ -27,15 +27,15 @@
     "caption": "PLANT PROTEIN IS BACK!\n\nAccording to Consumer Reports, plant protein generally c",
     "date": "16 Oct 2026",
     "date_ts": 1792157629.0,
-    "likes": 6792,
-    "comments": 117,
-    "views": 323391,
-    "engagement": 3.31,
+    "likes": 7033,
+    "comments": 120,
+    "views": 336018,
+    "engagement": 3.43,
     "sentiment_score": null,
     "va_scores": null,
     "is_fp_collab": true,
-    "hours_since_post": 67.3,
-    "run_at": "2026-10-19 08:49 UTC"
+    "hours_since_post": 90.9,
+    "run_at": "2026-10-20 08:29 UTC"
   },
   {
     "id": "DeeYQ4nAB7Z",
@@ -43,7 +43,7 @@
     "caption": "Mumbai, we’ve got plans for your Sunday morning🏃\n\nJoin us for a 3K run led by Ai",
     "date": "14 Oct 2026",
     "date_ts": 1791981287.0,
-    "likes": 217,
+    "likes": 219,
     "comments": 10,
     "views": null,
     "engagement": 0.11,
@@ -53,8 +53,8 @@
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 116.2,
-    "run_at": "2026-10-19 08:49 UTC"
+    "hours_since_post": 139.9,
+    "run_at": "2026-10-20 08:29 UTC"
   },
   {
     "id": "DecCoyDsXqw",
@@ -62,15 +62,15 @@
     "caption": "New Product Launch: PLANT PROTEIN COCOA IS FINALLY HERE!\n\nYou can order it from ",
     "date": "13 Oct 2026",
     "date_ts": 1791902614.0,
-    "likes": 38123,
+    "likes": 38604,
     "comments": 405,
-    "views": 1106748,
-    "engagement": 18.48,
+    "views": 1120300,
+    "engagement": 18.71,
     "sentiment_score": null,
     "va_scores": null,
     "is_fp_collab": true,
-    "hours_since_post": 138.1,
-    "run_at": "2026-10-19 08:49 UTC"
+    "hours_since_post": 161.8,
+    "run_at": "2026-10-20 08:29 UTC"
   },
   {
     "id": "DeZUVRcgF0w",
@@ -78,18 +78,18 @@
     "caption": "WALL OF FAILURES.\nAt Only what’s needed, we believe failures deserve to be as vi",
     "date": "12 Oct 2026",
     "date_ts": 1791810912.0,
-    "likes": 1572,
+    "likes": 1612,
     "comments": 34,
     "views": null,
-    "engagement": 0.77,
+    "engagement": 0.79,
     "sentiment_score": null,
     "va_scores": {
       "overall": 7,
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 163.6,
-    "run_at": "2026-10-19 08:49 UTC"
+    "hours_since_post": 187.2,
+    "run_at": "2026-10-20 08:29 UTC"
   },
   {
     "id": "DeTc24OAswE",
@@ -97,10 +97,10 @@
     "caption": "Testing, testing one… two… three 🔍\nOnly What’s needed is now live on @flipkart 🛒",
     "date": "10 Oct 2026",
     "date_ts": 1791614149.0,
-    "likes": 41023,
+    "likes": 41097,
     "comments": 205,
-    "views": 30743528,
-    "engagement": 19.77,
+    "views": 30748847,
+    "engagement": 19.81,
     "sentiment_score": null,
     "va_scores": {
       "hook": 2,
@@ -110,8 +110,8 @@
       "type": "reel"
     },
     "is_fp_collab": true,
-    "hours_since_post": 218.2,
-    "run_at": "2026-10-19 08:49 UTC"
+    "hours_since_post": 241.9,
+    "run_at": "2026-10-20 08:29 UTC"
   },
   {
     "id": "DePFf1PAK3V",
@@ -119,18 +119,18 @@
     "caption": "Do Indians need 150g protein per day?\n\nThere is no single protein number that wo",
     "date": "08 Oct 2026",
     "date_ts": 1791467590.0,
-    "likes": 1072,
-    "comments": 32,
+    "likes": 1083,
+    "comments": 33,
     "views": null,
-    "engagement": 0.53,
+    "engagement": 0.54,
     "sentiment_score": null,
     "va_scores": {
       "overall": 3,
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 258.9,
-    "run_at": "2026-10-19 08:49 UTC"
+    "hours_since_post": 282.6,
+    "run_at": "2026-10-20 08:29 UTC"
   },
   {
     "id": "DeJzO_5AAgI",
@@ -138,10 +138,10 @@
     "caption": "Your protein might be spiked by amino acids.\n\nWhen you plan your meals around th",
     "date": "06 Oct 2026",
     "date_ts": 1791290372.0,
-    "likes": 852,
-    "comments": 32,
-    "views": 24288,
-    "engagement": 0.42,
+    "likes": 859,
+    "comments": 31,
+    "views": 24500,
+    "engagement": 0.43,
     "sentiment_score": null,
     "va_scores": {
       "hook": 4,
@@ -151,8 +151,8 @@
       "type": "reel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 308.2,
-    "run_at": "2026-10-19 08:49 UTC"
+    "hours_since_post": 331.8,
+    "run_at": "2026-10-20 08:29 UTC"
   },
   {
     "id": "DeEt3qzk4QI",
@@ -170,8 +170,8 @@
       "type": "carousel"
     },
     "is_fp_collab": true,
-    "hours_since_post": 355.6,
-    "run_at": "2026-10-19 08:49 UTC"
+    "hours_since_post": 379.3,
+    "run_at": "2026-10-20 08:29 UTC"
   },
   {
     "id": "Dd_d8BYNfyS",
@@ -181,7 +181,7 @@
     "date_ts": 1790943617.0,
     "likes": 1727,
     "comments": 50,
-    "views": 67266,
+    "views": 67328,
     "engagement": 0.85,
     "sentiment_score": null,
     "va_scores": {
@@ -192,8 +192,8 @@
       "type": "reel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 404.5,
-    "run_at": "2026-10-19 08:49 UTC"
+    "hours_since_post": 428.2,
+    "run_at": "2026-10-20 08:29 UTC"
   },
   {
     "id": "Dd6uJMggNDB",
@@ -211,8 +211,8 @@
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 448.8,
-    "run_at": "2026-10-19 08:49 UTC"
+    "hours_since_post": 472.4,
+    "run_at": "2026-10-20 08:29 UTC"
   },
   {
     "id": "DdyIIk8gLrp",
@@ -220,18 +220,18 @@
     "caption": "Why can’t we stop sending a scoop with every pack?\n\nOne of the requests we’ve he",
     "date": "27 Sep 2026",
     "date_ts": 1790495894.0,
-    "likes": 20597,
+    "likes": 20598,
     "comments": 1997,
     "views": null,
-    "engagement": 10.83,
+    "engagement": 10.84,
     "sentiment_score": null,
     "va_scores": {
       "overall": 8,
       "type": "carousel"
     },
     "is_fp_collab": false,
-    "hours_since_post": 528.9,
-    "run_at": "2026-10-19 08:49 UTC"
+    "hours_since_post": 552.5,
+    "run_at": "2026-10-20 08:29 UTC"
   },
   {
     "id": "DdteI66gBC5",
